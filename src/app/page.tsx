@@ -1,103 +1,48 @@
-import Image from "next/image";
+import type { Metadata } from 'next';
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+
+export const metadata: Metadata = {
+  title: 'Yılan Oyunu - Farcaster Frame',
+  description: 'Farcaster frame olarak oynayabileceğin klasik yılan oyunu!',
+  openGraph: {
+    title: 'Yılan Oyunu 🐍',
+    description: 'Farcaster\'da oyna!',
+  },
+  other: {
+    'fc:frame': 'vNext',
+    'fc:frame:image': `${baseUrl}/api/og`,
+    'fc:frame:image:aspect_ratio': '1:1',
+    'fc:frame:button:1': '🎮 Oyunu Başlat',
+    'fc:frame:post_url': `${baseUrl}/api/frame`,
+  },
+};
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div style={{ padding: '40px', fontFamily: 'Arial, sans-serif', maxWidth: '600px', margin: '0 auto', backgroundColor: '#f5f5f5', minHeight: '100vh' }}>
+      <h1 style={{ color: '#10b981', fontSize: '48px', marginBottom: '10px' }}>🐍 Yılan Oyunu</h1>
+      <p style={{ fontSize: '20px', color: '#333', marginBottom: '30px' }}>Farcaster'da frame olarak oyna!</p>
+      
+      <div style={{ marginTop: '30px', padding: '20px', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)', marginBottom: '20px' }}>
+        <h2 style={{ color: '#333', marginBottom: '15px' }}>🎮 Nasıl Oynanır:</h2>
+        <ul style={{ fontSize: '18px', lineHeight: '1.8', color: '#555' }}>
+          <li>↑ ↓ ← → butonlarıyla yönlendir</li>
+          <li>🔴 Kırmızı yemeği ye ve büyü</li>
+          <li>❌ Duvara veya kendine çarpma!</li>
+          <li>🏆 En yüksek skoru yap</li>
+        </ul>
+      </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <div style={{ marginTop: '20px', padding: '20px', backgroundColor: '#e0f2fe', borderRadius: '8px' }}>
+        <h3 style={{ color: '#0284c7', marginBottom: '15px' }}>📱 Farcaster'da Oynamak İçin:</h3>
+        <ol style={{ fontSize: '16px', lineHeight: '1.8', color: '#333' }}>
+          <li>Bu sayfanın URL'ini kopyala</li>
+          <li>Warpcast'te yeni bir cast oluştur</li>
+          <li>URL'i yapıştır ve paylaş</li>
+          <li>Frame otomatik görünecek!</li>
+        </ol>
+      </div>
     </div>
   );
 }
