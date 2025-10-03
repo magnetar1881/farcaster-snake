@@ -21,7 +21,7 @@ function initGame(): GameState {
 }
 
 function generateFood(snake: { x: number; y: number }[]): { x: number; y: number } {
-  let newFood;
+  let newFood: { x: number; y: number };
   do {
     newFood = {
       x: Math.floor(Math.random() * GRID_SIZE),
