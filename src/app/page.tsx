@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+const baseUrl = 'https://farcaster-snake-jdv6.vercel.app';
 
 export const metadata: Metadata = {
   title: 'Yilan Oyunu - Farcaster Frame',
