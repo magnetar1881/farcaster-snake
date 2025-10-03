@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
   other: {
     'fc:frame': 'vNext',
-    'fc:frame:image': `${baseUrl}/api/og`,
+    'fc:frame:image': `${baseUrl}/frame-start.png`,
     'fc:frame:image:aspect_ratio': '1:1',
     'fc:frame:button:1': 'Oyunu Baslat',
     'fc:frame:post_url': `${baseUrl}/api/frame`,
