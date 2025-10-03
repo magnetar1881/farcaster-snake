@@ -11,10 +11,11 @@ export const metadata: Metadata = {
   },
   other: {
     'fc:frame': 'vNext',
-    'fc:frame:image': `${baseUrl}/frame-start.png`,
+    'fc:frame:image': 'https://farcaster-snake-jdv6.vercel.app/frame-start.png',
     'fc:frame:image:aspect_ratio': '1:1',
     'fc:frame:button:1': 'Oyunu Baslat',
-    'fc:frame:post_url': `${baseUrl}/api/frame`,
+    'fc:frame:button:1:action': 'post',
+    'fc:frame:post_url': 'https://farcaster-snake-jdv6.vercel.app/api/frame',
   },
 };
 
