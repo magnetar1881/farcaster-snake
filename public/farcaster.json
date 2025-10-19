@@ -1,0 +1,15 @@
+{
+  "accountAssociation": {
+    "header": "eyJmaWQiOjYzNDYsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHg4NjExNDQ5NzA4YTk5ZmM4NTExNjE4MzE3OWE2NmU5NzM2YTBkNDI1In0",
+    "payload": "eyJkb21haW4iOiJmYXJjYXN0ZXItc25ha2UtamR2Ni52ZXJjZWwuYXBwIn0",
+    "signature": "MHg..."
+  },
+  "frame": {
+    "version": "next",
+    "name": "Yilan Oyunu",
+    "iconUrl": "https://farcaster-snake-jdv6.vercel.app/frame-start.png",
+    "splashImageUrl": "https://farcaster-snake-jdv6.vercel.app/frame-start.png",
+    "splashBackgroundColor": "#1a1a1a",
+    "homeUrl": "https://farcaster-snake-jdv6.vercel.app"
+  }
+}

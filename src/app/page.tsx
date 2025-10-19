@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://your-domain.vercel.app';
+const baseUrl = 'https://farcaster-snake-f7r3.vercel.app';
 
 export const metadata: Metadata = {
   title: "Yılan Oyunu - Farcaster Frame",
