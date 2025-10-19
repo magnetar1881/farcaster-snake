@@ -16,10 +16,5 @@
     "ogTitle": "Yilan Oyunu",
     "ogDescription": "Klasik yilan oyununu Farcaster'da oyna!",
     "ogImageUrl": "https://farcaster-snake-f7r3.vercel.app/frame-start.png"
-  },
-  "accountAssociation": {
-    "header": "",
-    "payload": "",
-    "signature": ""
   }
 }
