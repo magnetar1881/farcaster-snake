@@ -1,10 +1,25 @@
 {
   "frame": {
-    "version": "next",
     "name": "Yilan Oyunu",
+    "version": "1",
     "iconUrl": "https://farcaster-snake-f7r3.vercel.app/frame-start.png",
+    "homeUrl": "https://farcaster-snake-f7r3.vercel.app",
+    "imageUrl": "https://farcaster-snake-f7r3.vercel.app/frame-start.png",
+    "buttonTitle": "Oyna",
     "splashImageUrl": "https://farcaster-snake-f7r3.vercel.app/frame-start.png",
     "splashBackgroundColor": "#1a1a1a",
-    "homeUrl": "https://farcaster-snake-f7r3.vercel.app"
+    "subtitle": "Klasik yilan oyunu",
+    "description": "Klasik yilan oyunu! Ok tuslariyla yonlendir, kirmizi yemegi ye ve buyumeye devam et. Duvara veya kendine carpmayi unutma!",
+    "primaryCategory": "games",
+    "tags": ["yilan", "snake", "game", "oyun", "classic"],
+    "tagline": "Klasik yilan oyunu",
+    "ogTitle": "Yilan Oyunu",
+    "ogDescription": "Klasik yilan oyununu Farcaster'da oyna!",
+    "ogImageUrl": "https://farcaster-snake-f7r3.vercel.app/frame-start.png"
+  },
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
   }
 }
