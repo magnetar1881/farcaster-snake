@@ -1,3 +1,5 @@
+import { WalletProvider } from '@/providers/wallet-provider';
+
 export default function RootLayout({
   children,
 }: {
@@ -13,7 +15,11 @@ export default function RootLayout({
         <meta property="fc:frame:button:1:action" content="post" />
         <meta property="fc:frame:post_url" content="https://farcaster-snake-f7r3.vercel.app/api/frame" />
       </head>
-      <body>{children}</body>
+      <body>
+        <WalletProvider>
+          {children}
+        </WalletProvider>
+      </body>
     </html>
   )
 }
